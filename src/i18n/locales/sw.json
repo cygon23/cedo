@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu Sisi",
+    "whatWeDo": "Tunachofanya",
+    "impact": "Athari",
+    "partners": "Washirika",
+    "stories": "Hadithi",
+    "getInvolved": "Jiunge Nasi",
+    "contact": "Wasiliana",
+    "donateNow": "Changia Sasa"
+  },
+  "common": {
+    "learnMore": "Jifunze Zaidi",
+    "getStarted": "Anza",
+    "donate": "Changia",
+    "volunteer": "Jitolee",
+    "subscribe": "Jisajili",
+    "contactUs": "Wasiliana Nasi",
+    "readMore": "Soma Zaidi",
+    "viewAll": "Ona Zote",
+    "language": "Lugha",
+    "darkMode": "Hali ya Giza",
+    "lightMode": "Hali ya Mwanga"
+  },
+  "home": {
+    "hero": {
+      "title": "Kuimarisha Jamii Kupitia Maendeleo",
+      "subtitle": "Kujenga maisha endelevu kwa jamii za vijijini Kenya kupitia elimu, afya, na mipango ya kujitegemea kiuchumi.",
+      "cta": "Jiunge na Dhamira Yetu"
+    },
+    "impact": {
+      "title": "Athari Yetu",
+      "communities": "Jamii Zilizohudumika",
+      "students": "Wanafunzi Walioelimiwa",
+      "families": "Familia Zilizosaidiwa",
+      "projects": "Miradi Iliyokamilika"
+    },
+    "programs": {
+      "title": "Mipango Yetu Kuu",
+      "education": {
+        "title": "Elimu na Maendeleo ya Ujuzi",
+        "description": "Kutoa elimu bora na mafunzo ya kitaaluma ili kuwawezesha watu kwa maarifa na ujuzi."
+      },
+      "health": {
+        "title": "Upatikanaji wa Huduma za Afya",
+        "description": "Kuboresha upatikanaji wa huduma za afya na kukuza ustawi katika jamii zisizohudumika."
+      },
+      "agriculture": {
+        "title": "Kilimo Endelevu",
+        "description": "Kusaidia wakulima kwa mbinu za kisasa na rasilimali kwa usalama wa chakula endelevu."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Kuhusu CEDO",
+      "subtitle": "Shirika la Kuimarisha na Kuendeleza Jamii"
+    },
+    "mission": {
+      "title": "Dhamira Yetu",
+      "text": "Kuimarisha jamii kupitia mipango endelevu ya maendeleo inayokuza elimu, upatikanaji wa afya, na fursa za kiuchumi huku tukihifadhi utamaduni na mazingira ya eneo."
+    },
+    "vision": {
+      "title": "Maono Yetu",
+      "text": "Ulimwengu ambapo kila jamii ina upatikanaji wa elimu bora, huduma za afya, na fursa za kiuchumi kujenga maisha yenye mafanikio na endelevu."
+    },
+    "values": {
+      "title": "Maadili Yetu",
+      "community": "Kuelekezwa na Jamii",
+      "sustainability": "Uendelevu",
+      "integrity": "Uongozi",
+      "collaboration": "Ushirikiano"
+    }
+  },
+  "whatWeDo": {
+    "title": "Tunachofanya",
+    "subtitle": "Mipango ya kina ya maendeleo inayoshughulikia mizizi ya umaskini",
+    "education": {
+      "title": "Elimu na Maendeleo ya Ujuzi",
+      "programs": [
+        "Mipango ya Ufadhili",
+        "Ujuzi wa Watu Wazima",
+        "Mafunzo ya Kitaaluma",
+        "Ujuzi wa Kidijitali"
+      ],
+      "description": "Tunaamini elimu ni msingi wa maendeleo endelevu."
+    },
+    "health": {
+      "title": "Afya na Ustawi",
+      "programs": [
+        "Kliniki za Rununu",
+        "Elimu ya Afya",
+        "Mipango ya Lishe",
+        "Huduma za Mama na Mtoto"
+      ],
+      "description": "Kuhakikisha jamii zina upatikanaji wa huduma bora za afya."
+    },
+    "economic": {
+      "title": "Uwezo wa Kiuchumi",
+      "programs": [
+        "Mikopo Midogo",
+        "Maendeleo ya Ushirika",
+        "Upatikanaji wa Soko",
+        "Ujasiriamali"
+      ],
+      "description": "Kuunda fursa endelevu za mapato kwa wanajamii."
+    },
+    "agriculture": {
+      "title": "Kilimo Endelevu",
+      "programs": [
+        "Kilimo cha Kisasa",
+        "Mifumo ya Umwagiliaji",
+        "Utofauti wa Mazao",
+        "Mafunzo ya Wakulima"
+      ],
+      "description": "Kusaidia usalama wa chakula kupitia mbinu bora za kilimo."
+    }
+  },
+  "footer": {
+    "description": "Kuimarisha jamii kupitia mipango endelevu ya maendeleo.",
+    "quickLinks": "Viungo vya Haraka",
+    "getInvolved": "Jiunge Nasi",
+    "contact": "Maelezo ya Mawasiliano",
+    "newsletter": {
+      "title": "Pata Habari",
+      "subtitle": "Jisajili kwa jarida letu kupata habari kuhusu mipango na athari zetu.",
+      "placeholder": "Ingiza barua pepe yako",
+      "button": "Jisajili"
+    },
+    "social": "Tufuate",
+    "copyright": "© 2024 CEDO. Haki zote zimehifadhiwa.",
+    "privacy": "Sera ya Faragha",
+    "terms": "Masharti ya Huduma"
+  }
+}

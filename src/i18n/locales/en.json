@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "whatWeDo": "What we Do",
+    "impact": "Impact",
+    "latest": "Latest",
+    "partners": "Partners",
+    "stories": "Stories",
+    "news": "News",
+    "researchReports": "Research & Reports",
+    "contact": "Contact",
+    "donateNow": "Donate Now",
+    "tagline": "Empowering Communities"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "donate": "Donate",
+    "volunteer": "Volunteer",
+    "subscribe": "Subscribe",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "home": {
+    "hero": {
+      "title": "Empowering Communities Through Development",
+      "subtitle": "Building sustainable futures for rural communities in Kenya through education, healthcare, and economic empowerment programs.",
+      "cta": "Join Our Mission"
+    },
+    "impact": {
+      "title": "Our Impact",
+      "communities": "Communities Served",
+      "students": "Students Educated",
+      "families": "Families Supported",
+      "projects": "Projects Completed"
+    },
+    "programs": {
+      "title": "Our Core Programs",
+      "education": {
+        "title": "Education & Skills Development",
+        "description": "Providing quality education and vocational training to empower individuals with knowledge and skills."
+      },
+      "health": {
+        "title": "Healthcare Access",
+        "description": "Improving healthcare access and promoting wellness in underserved communities."
+      },
+      "agriculture": {
+        "title": "Sustainable Agriculture",
+        "description": "Supporting farmers with modern techniques and resources for sustainable food security."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About CEDO",
+      "subtitle": "Community Empowerment and Development Organization"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To empower communities through sustainable development programs that promote education, healthcare access, and economic opportunities while preserving local culture and environment."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "A world where every community has access to quality education, healthcare, and economic opportunities to build prosperous and sustainable futures."
+    },
+    "values": {
+      "title": "Our Values",
+      "community": "Community-Centered",
+      "sustainability": "Sustainability",
+      "integrity": "Integrity",
+      "collaboration": "Collaboration"
+    }
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Comprehensive development programs addressing the root causes of poverty",
+    "education": {
+      "title": "Education & Skills Development",
+      "programs": [
+        "Scholarship Programs",
+        "Adult Literacy",
+        "Vocational Training",
+        "Digital Literacy"
+      ],
+      "description": "We believe education is the foundation of sustainable development."
+    },
+    "health": {
+      "title": "Healthcare & Wellness",
+      "programs": [
+        "Mobile Clinics",
+        "Health Education",
+        "Nutrition Programs",
+        "Maternal Care"
+      ],
+      "description": "Ensuring communities have access to quality healthcare services."
+    },
+    "economic": {
+      "title": "Economic Empowerment",
+      "programs": [
+        "Microfinance",
+        "Cooperative Development",
+        "Market Access",
+        "Entrepreneurship"
+      ],
+      "description": "Creating sustainable income opportunities for community members."
+    },
+    "agriculture": {
+      "title": "Sustainable Agriculture",
+      "programs": [
+        "Modern Farming",
+        "Irrigation Systems",
+        "Crop Diversification",
+        "Farmer Training"
+      ],
+      "description": "Supporting food security through improved agricultural practices."
+    }
+  },
+  "footer": {
+    "description": "Empowering communities through sustainable development programs.",
+    "quickLinks": "Quick Links",
+    "getInvolved": "Get Involved",
+    "contact": "Contact Info",
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Subscribe to our newsletter for updates on our programs and impact.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "social": "Follow Us",
+    "copyright": "© 2024 CEDO. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
