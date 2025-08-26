@@ -8,15 +8,14 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
-  // Main navigation items (without Contact)
+ 
   const navItems = [
     { name: t("nav.home"), href: "/" },
-    { name: t("nav.about"), href: "/about" }, // Independent page
-    { name: t("nav.whatWeDo"), href: "/what-we-do" }, // Section scroll
+    { name: t("nav.about"), href: "/about" },
+    { name: t("nav.whatWeDo"), href: "/what-we-do" },
     { name: t("nav.impact"), href: "/impact" },
   ];
 
-  // Dropdown for "Latest"
   const latestDropdown = {
     name: t("nav.latest"),
     items: [
@@ -27,7 +26,6 @@ const Navigation = () => {
     ],
   };
 
-  // Contact kept separate (after Latest)
   const contactItem = { name: t("nav.contact"), href: "/contact" };
 
   return (
@@ -115,7 +113,7 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className='md:hidden'>
-          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-b border-border'>
+          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-b border-border'>
             {navItems.map((item) => (
               <Link
                 key={item.name}

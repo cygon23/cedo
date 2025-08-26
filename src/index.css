@@ -55,16 +55,16 @@ All colors MUST be HSL. Logo colors: #373864 and #1E7EE2
     --gradient-impact: linear-gradient(90deg, hsl(211, 78%, 50%) 0%, hsl(239, 29%, 30%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(211, 78%, 50%, 0.15);
-    --shadow-medium: 0 8px 25px hsl(239, 29%, 30%, 0.2);
-    --shadow-strong: 0 15px 35px hsl(239, 29%, 30%, 0.3);
+    --shadow-soft: 0 4px 20px hsl(211 78% 50% / 0.15);
+    --shadow-medium: 0 8px 25px hsl(239 29% 30% / 0.2);
+    --shadow-strong: 0 15px 35px hsl(239 29% 30% / 0.3);
 
     --radius: 0.75rem;
 
-    /* Typography */
-    --heading-color: hsl(239, 29%, 30%);
-    --body-color: hsl(239, 29%, 20%);
-    --caption-color: hsl(239, 15%, 47%);
+    /* Typography - HSL values only (no hsl() wrapper) */
+    --heading-color: 239 29% 30%;
+    --body-color: 239 29% 20%;
+    --caption-color: 239 15% 47%;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,7 +101,7 @@ All colors MUST be HSL. Logo colors: #373864 and #1E7EE2
     --ring: 211 78% 60%;
 
     --gradient-hero: linear-gradient(135deg, hsl(239, 29%, 15%) 0%, hsl(211, 78%, 30%) 50%, hsl(211, 78%, 40%) 100%);
-    --shadow-soft: 0 4px 20px hsl(239, 29%, 8%, 0.5);
+    --shadow-soft: 0 4px 20px hsl(239 29% 8% / 0.5);
   }
 }
 
@@ -115,7 +115,7 @@ All colors MUST be HSL. Logo colors: #373864 and #1E7EE2
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-[hsl(var(--heading-color))];
+    color: hsl(var(--heading-color));
   }
 }
 
@@ -173,4 +173,57 @@ All colors MUST be HSL. Logo colors: #373864 and #1E7EE2
     transform: translateZ(0);
     will-change: transform;
   }
+
+    @keyframes float-0 {
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          33% {
+            transform: translateY(-10px) rotate(1deg);
+          }
+          66% {
+            transform: translateY(5px) rotate(-1deg);
+          }
+        }
+        @keyframes float-1 {
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          33% {
+            transform: translateY(8px) rotate(-1deg);
+          }
+          66% {
+            transform: translateY(-12px) rotate(1deg);
+          }
+        }
+        @keyframes float-2 {
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          33% {
+            transform: translateY(-8px) rotate(1deg);
+          }
+          66% {
+            transform: translateY(10px) rotate(-1deg);
+          }
+        }
+        .animate-fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .shadow-3xl {
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
 }

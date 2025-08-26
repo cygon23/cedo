@@ -14,9 +14,9 @@ import {
   Calendar,
   ArrowRight,
 } from "lucide-react";
-import healthImage from "@/assets/health-impact.jpg";
-import educationImage from "@/assets/education-impact.jpg";
-import agricultureImage from "@/assets/agriculture-impact.jpg";
+import healthImage from "@/assets/hero-community.jpg";
+import educationImage from "@/assets/hero-community.jpg";
+import agricultureImage from "@/assets/hero-community.jpg";
 
 const Impact = () => {
   return (
@@ -435,7 +435,7 @@ const Impact = () => {
           </p>
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
             <Link to='/get-involved'>
-              <Button variant='donate' size='lg'>
+              <Button variant='secondary' size='lg'>
                 Get Involved
                 <ArrowRight className='w-5 h-5' />
               </Button>

@@ -7,10 +7,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import WhatWeDo from "./pages/WhatWeDo";
-import Impact from "./components/Impact";
+import Impact from "./pages/Impact";
 import Partners from "./pages/Partners";
 import Stories from "./pages/Stories";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 

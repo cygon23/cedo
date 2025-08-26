@@ -5,13 +5,15 @@ import Mission from "@/components/Mission";
 import Programs from "@/components/Programs";
 import Impact from "@/components/Impact";
 import Latest from "@/components/Latest";
-import Contact from "@/components/Contact";
+import Partiners from "@/components/Partiners";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
+import Team from "@/components/Team";
+import Donate from "@/components/Donate";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className='min-h-screen'>
       <Navigation />
       <main>
         <Hero />
@@ -20,7 +22,9 @@ const Index = () => {
         <Programs />
         <Impact />
         <Latest />
-        <Contact />
+        <Partiners />
+        <Donate />
+        <Team />
       </main>
       <Footer />
       <ChatBot />
