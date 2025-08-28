@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import LanguageToggle from "@/components/shared/LanguageToggle";
+import ThemeToggle from "@/components/shared/ThemeToggle"; 
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
- 
   const navItems = [
     { name: t("nav.home"), href: "/" },
     { name: t("nav.about"), href: "/about" },
@@ -29,7 +30,7 @@ const Navigation = () => {
   const contactItem = { name: t("nav.contact"), href: "/contact" };
 
   return (
-    <nav className='fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50'>
+    <nav className='fixed top-0 w-full bg-white/95 dark:bg-background backdrop-blur-sm border-b border-border z-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           {/* Logo */}
@@ -50,48 +51,42 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className='hidden md:block'>
-            <div className='ml-10 flex items-baseline space-x-8'>
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200'>
-                  {item.name}
-                </Link>
-              ))}
-
-              {/* Latest Dropdown */}
-              <div className='relative group'>
-                <button className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200'>
-                  {latestDropdown.name}
-                </button>
-                <div className='absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-56 z-50'>
-                  {latestDropdown.items.map((subItem) => (
-                    <a
-                      key={subItem.name}
-                      href={subItem.href}
-                      className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
-                      {subItem.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-
-              {/* Contact - independent page AFTER Latest */}
+          <div className='hidden md:flex items-center space-x-6'>
+            {navItems.map((item) => (
               <Link
-                to={contactItem.href}
+                key={item.name}
+                to={item.href}
                 className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200'>
-                {contactItem.name}
+                {item.name}
               </Link>
-            </div>
-          </div>
+            ))}
 
-          {/* CTA Button - Desktop */}
-          <div className='hidden md:block'>
-            <Button variant='cta' size='sm'>
-              {t("nav.donateNow")}
-            </Button>
+            {/* Latest Dropdown */}
+            <div className='relative group'>
+              <button className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200'>
+                {latestDropdown.name}
+              </button>
+              <div className='absolute hidden group-hover:block bg-white dark:bg-background shadow-lg rounded-md mt-2 w-56 z-50'>
+                {latestDropdown.items.map((subItem) => (
+                  <a
+                    key={subItem.name}
+                    href={subItem.href}
+                    className='block px-4 py-2 text-sm text-foreground hover:bg-muted'>
+                    {subItem.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Contact */}
+            <Link
+              to={contactItem.href}
+              className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200'>
+              {contactItem.name}
+            </Link>
+
+            <LanguageToggle />
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -113,7 +108,7 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className='md:hidden'>
-          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-b border-border'>
+          <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-b border-border'>
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -124,7 +119,6 @@ const Navigation = () => {
               </Link>
             ))}
 
-            {/* Latest Dropdown items */}
             {latestDropdown.items.map((subItem) => (
               <a
                 key={subItem.name}
@@ -135,7 +129,6 @@ const Navigation = () => {
               </a>
             ))}
 
-            {/* Contact AFTER Latest */}
             <Link
               to={contactItem.href}
               className='text-foreground hover:text-primary block px-3 py-2 text-base font-medium'
@@ -143,10 +136,9 @@ const Navigation = () => {
               {contactItem.name}
             </Link>
 
-            <div className='pt-4 pb-2'>
-              <Button variant='cta' size='sm' className='w-full'>
-                {t("nav.donateNow")}
-              </Button>
+            <div className='pt-4 pb-2 space-y-2'>
+              <LanguageToggle />
+              <ThemeToggle />
             </div>
           </div>
         </div>
