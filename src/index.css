@@ -226,4 +226,19 @@ All colors MUST be HSL. Logo colors: #373864 and #1E7EE2
         .shadow-3xl {
           box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
+
+        /* Mobile handling */
+       @media (max-width: 768px) {
+  .floating-card {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    animation: none !important; /* disable floating on mobile */
+    margin: 0 auto; /* center cards */
+    width: 90% !important; /* responsive width */
+    max-width: 20rem; /* prevent oversized cards */
+  }
+}
+
+
 }

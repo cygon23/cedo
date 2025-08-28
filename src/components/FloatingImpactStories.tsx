@@ -175,7 +175,12 @@ const FloatingImpactStories = () => {
       </div>
 
       {/* Floating Stories Container */}
-      <div className='relative h-80 mb-12'>
+      <div
+        className='
+            relative h-[28rem] mb-12 overflow-hidden 
+            md:h-[24rem] 
+            sm:h-auto sm:flex sm:flex-col sm:items-center sm:space-y-6
+          '>
         {impactStories.map((story, index) => (
           <FloatingCard
             key={story.id}
