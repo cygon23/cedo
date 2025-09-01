@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@cedo.or.tz", "programs@cedo.or.tz"],
+      details: ["info@cedonia.org", "programs@cedonia.org"],
     },
     {
       icon: Clock,
