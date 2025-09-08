@@ -23,7 +23,7 @@ const WhatWeDo = () => {
       {/* Hero Section */}
       <section className='py-24 hero-gradient'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in'>
+          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 '>
             What We Do
           </h1>
           <p className='text-xl sm:text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in'>

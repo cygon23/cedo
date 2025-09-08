@@ -28,7 +28,7 @@ const FloatingImpactStories = () => {
       quote:
         "CEDO's health education program changed everything for our village. We now have better nutrition, cleaner water, and hope for our children's future.",
       author: "Maria, Community Leader",
-      color: "from-primary to-secondary",
+      color: "from-primary to-primary",
       bgGradient: "from-primary/5 to-secondary/5",
       position: { x: 15, y: 25 },
     },
@@ -45,7 +45,7 @@ const FloatingImpactStories = () => {
       quote:
         "Thanks to CEDO's advocacy, I now know my rights and can protect myself and my children from violence.",
       author: "Sarah K., Women's Group Member",
-      color: "from-impact to-hope",
+      color: "from-primary to-primary",
       bgGradient: "from-impact/5 to-hope/5",
       position: { x: 65, y: 20 },
     },
@@ -62,7 +62,7 @@ const FloatingImpactStories = () => {
       quote:
         "As a trained health worker, I can now provide life-saving care to my community members who couldn't reach the hospital.",
       author: "John M., Community Health Worker",
-      color: "from-secondary to-primary",
+      color: "from-primary to-primary",
       bgGradient: "from-secondary/5 to-primary/5",
       position: { x: 40, y: 55 },
     },
@@ -97,7 +97,6 @@ const FloatingImpactStories = () => {
           <div className={`h-2 bg-gradient-to-r ${story.color}`}></div>
           <CardContent
             className={`p-6 bg-gradient-to-br ${story.bgGradient} backdrop-blur-sm`}>
-            {/* Card content - same as your existing code */}
             <div className='flex items-start justify-between mb-4'>
               <div
                 className={`w-12 h-12 rounded-xl bg-gradient-to-r ${story.color} flex items-center justify-center shadow-lg`}>
