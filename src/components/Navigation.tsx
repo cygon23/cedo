@@ -22,6 +22,7 @@ const Navigation = () => {
     items: [
       { name: t("nav.partners"), href: "/partners" },
       { name: t("nav.stories"), href: "/stories" },
+      { name: t("nav.team"), href: "/team-cedo" },
       { name: t("nav.news"), href: "#news" },
       { name: t("nav.researchReports"), href: "#research-reports" },
     ],

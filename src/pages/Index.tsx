@@ -24,7 +24,7 @@ const Index = () => {
         <Latest />
         <Partiners />
         <Donate />
-        <Team />
+        {/* <Team /> */}
       </main>
       <Footer />
       <ChatBot />

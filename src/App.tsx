@@ -12,6 +12,7 @@ import Partners from "./pages/Partners";
 import Stories from "./pages/Stories";
 import Contact from "./pages/Contact";
 import { ThemeProvider } from "next-themes";
+import Team from "./components/Team";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path='/partners' element={<Partners />} />
             <Route path='/stories' element={<Stories />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/team-cedo' element={<Team />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path='*' element={<NotFound />} />
           </Routes>

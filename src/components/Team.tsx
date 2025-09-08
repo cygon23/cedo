@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -9,7 +11,7 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: "Aisha Y. ntakune",
+      name: "Aisha Y. Ntakune",
       role: "Executive Director",
       image: "#",
       bio: "With over 15 years of experience in community development, Aisha leads CEDO's mission to create lasting impact.",
@@ -114,16 +116,19 @@ const Team = () => {
   );
 
   return (
-    <div className='min-h-screen bg-background'>
+    <div className='min-h-screen'>
+      <Navigation />
+
       {/* Hero Section */}
-      <section className='hero-gradient pt-24 pb-16'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-          <h1 className='text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in'>
-            Our Team
+      <section className='relative py-24 overflow-hidden'>
+        <div className='absolute inset-0 z-0 hero-gradient'></div>
+        <div className='relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in'>
+            Our <span className='text-gradient'>Team</span>
           </h1>
-          <p className='text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in'>
+          <p className='text-xl sm:text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in'>
             Meet the dedicated professionals driving positive change in
-            communities worldwide
+            communities across Tanzania
           </p>
         </div>
       </section>
@@ -189,7 +194,7 @@ const Team = () => {
 
       {/* Team Stats Section */}
       {showAllMembers && (
-        <section className='py-12 bg-muted/30'>
+        <section className='py-12 bg-secondary/30'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'>
               <div>
@@ -210,6 +215,55 @@ const Team = () => {
           </div>
         </section>
       )}
+
+      {/* Additional Team Section */}
+      <section className='py-16 bg-muted/20'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+          <h2 className='text-3xl sm:text-4xl font-bold text-foreground mb-6'>
+            Why Our Team Matters
+          </h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='p-6'>
+              <div className='w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4'>
+                <Users className='w-6 h-6 text-primary' />
+              </div>
+              <h3 className='text-lg font-semibold text-foreground mb-2'>
+                Local Expertise
+              </h3>
+              <p className='text-muted-foreground text-sm'>
+                Deep understanding of Tanzania's communities and cultural
+                contexts
+              </p>
+            </div>
+
+            <div className='p-6'>
+              <div className='w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4'>
+                <ArrowRight className='w-6 h-6 text-primary' />
+              </div>
+              <h3 className='text-lg font-semibold text-foreground mb-2'>
+                Proven Impact
+              </h3>
+              <p className='text-muted-foreground text-sm'>
+                Track record of successful community development initiatives
+              </p>
+            </div>
+
+            <div className='p-6'>
+              <div className='w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4'>
+                <Mail className='w-6 h-6 text-primary' />
+              </div>
+              <h3 className='text-lg font-semibold text-foreground mb-2'>
+                Collaborative Approach
+              </h3>
+              <p className='text-muted-foreground text-sm'>
+                Working together with communities to create sustainable change
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };

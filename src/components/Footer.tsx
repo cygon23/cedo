@@ -9,12 +9,12 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "About Us", href: "#about" },
+    { name: "About Us", href: "/about" },
     { name: "Our Mission", href: "#mission" },
     { name: "Programs", href: "#programs" },
-    { name: "Impact Stories", href: "#impact" },
-    { name: "Get Involved", href: "#contact" },
-    { name: "Annual Reports", href: "#" }
+    { name: "Impact Stories", href: "/stories" },
+    { name: "Get Involved", href: "/contact" },
+    { name: "Team", href: "/team-cedo" },
   ];
 
   const programs = [

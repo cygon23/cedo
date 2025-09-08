@@ -26,17 +26,6 @@ const Partners = () => {
       ],
     },
     {
-      icon: Globe,
-      title: "International Organizations",
-      description: "Working with global NGOs and development agencies",
-      partners: [
-        "United Nations Development Programme (UNDP)",
-        "World Health Organization (WHO)",
-        "UNICEF Tanzania",
-        "Oxfam Tanzania",
-      ],
-    },
-    {
       icon: Heart,
       title: "Local NGOs & CBOs",
       description: "Partnering with community-based organizations",
